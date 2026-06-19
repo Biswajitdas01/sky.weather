@@ -1,0 +1,117 @@
+.products-page {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.products-hero {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.products-hero h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.products-hero p {
+  color: var(--mid);
+  font-size: 16px;
+}
+
+.products-toolbar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px 16px;
+  border: 1.5px solid var(--light);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  background: var(--white);
+  color: var(--dark);
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--green);
+}
+
+.sort-select {
+  padding: 10px 16px;
+  border: 1.5px solid var(--light);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  background: var(--white);
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.category-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  border: 1.5px solid var(--light);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--white);
+  color: var(--mid);
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.filter-btn.active {
+  background: var(--green);
+  border-color: var(--green);
+  color: var(--white);
+}
+
+.result-count {
+  font-size: 13px;
+  color: var(--mid);
+  margin-bottom: 20px;
+}
+
+.products-grid-full {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.empty-state span { font-size: 56px; }
+.empty-state p { color: var(--mid); font-size: 16px; }
+
+@media (max-width: 900px) {
+  .products-grid-full { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .products-grid-full { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,126 @@
+.product-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+}
+
+.card-image {
+  position: relative;
+  background: var(--green-pale);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-emoji {
+  font-size: 72px;
+  user-select: none;
+}
+
+.wish-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--white);
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mid);
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.wish-btn.active { color: #e05; }
+.wish-btn:hover { transform: scale(1.1); }
+
+.card-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--green);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-artisan {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card-name {
+  font-size: 17px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2px;
+  color: var(--dark);
+}
+
+.card-category {
+  font-size: 12px;
+  color: var(--mid);
+  margin-bottom: 10px;
+}
+
+.card-colors {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(0,0,0,0.1);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.card-rating {
+  font-size: 11px;
+  color: var(--gold);
+}
+
+.card-rating span {
+  color: var(--mid);
+}
+
+.card-cta {
+  padding: 9px 18px;
+  font-size: 12px;
+}
