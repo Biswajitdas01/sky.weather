@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+h1 {
+  margin: 0 0 10px;
+  color: #1f2937;
+}
+
+.intro {
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.search-form button {
+  padding: 13px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background: #1d4ed8;
+}
+
+.hint {
+  margin-top: 12px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.loading {
+  margin-top: 18px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.message {
+  margin-top: 18px;
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.weather-card {
+  margin-top: 26px;
+  padding: 26px;
+  background: #f8fafc;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+.weather-card h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 28px;
+}
+
+.temp {
+  margin: 14px 0 6px;
+  font-size: 52px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.condition {
+  font-size: 20px;
+  color: #374151;
+  margin-bottom: 18px;
+}
+
+.weather-details {
+  text-align: left;
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.weather-details p {
+  margin: 8px 0;
+  color: #374151;
+}
+
+.weather-details span {
+  font-weight: bold;
+  color: #111827;
+}
+
+@media (max-width: 540px) {
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form button {
+    width: 100%;
+  }
+
+  .container {
+    padding: 24px;
+  }
+}
